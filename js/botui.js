@@ -4080,7 +4080,7 @@ function bot_ui_ini() {
 						}]
 					}).then(function(a) {
 						"sure" == a.value && sure();
-						"skip" == a.value && end()
+						"skip" == a.value && en()
 					})
 				})
 			})
@@ -4094,7 +4094,7 @@ function bot_ui_ini() {
 				secondpart()
 			})
 		},
-		end = function() {
+		en = function() {
 			botui.message.add({
 				delay: 600,
 				content: "![...](1.gif)"
@@ -4140,7 +4140,7 @@ function bot_ui_ini() {
 					}).then(function() {
 						botui.message.add({
 							delay: 700,
-							content: "![...](2.jpg)"
+							content: "![...](http://bfo375.bvimg.com/12951/dd93576562c37ec5.jpg)"
 						}).then(function() {
 							fourthpart()
 						})
@@ -4214,7 +4214,7 @@ function bot_ui_ini() {
 			}).then(function() {
 				botui.message.add({
 					delay: 700,
-					content: "![...](2.jpg)"
+					content: "![...](http://bfo375.bvimg.com/12951/140cf0632fb20539.png)"
 				}).then(function() {
 					fourthpart()
 				})
