@@ -4140,7 +4140,7 @@ function bot_ui_ini() {
 					}).then(function() {
 						botui.message.add({
 							delay: 700,
-							content: "![...](http://bfo375.bvimg.com/12951/dd93576562c37ec5.jpg)"
+							content: "![...](https://i.postimg.cc/gkts0Fw9/2.jpg)"
 						}).then(function() {
 							fourthpart()
 						})
@@ -4214,7 +4214,7 @@ function bot_ui_ini() {
 			}).then(function() {
 				botui.message.add({
 					delay: 700,
-					content: "![...](http://bfo375.bvimg.com/12951/140cf0632fb20539.png)"
+					content: "![...](https://i.postimg.cc/Bn8gLYDj/3.png)"
 				}).then(function() {
 					fourthpart()
 				})
