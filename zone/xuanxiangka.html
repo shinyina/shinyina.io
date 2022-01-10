@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+
+			#main {
+				overflow: hidden;
+				z-index: 4;
+				background-color: transparent;
+				width: 300px;
+				height: 500px;
+				border: #808080 2px solid;
+				box-shadow: 20px #2F3640;
+				position: absolute;
+				top: 150px;
+				left: 800px;
+				 box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+				    /*设置圆角*/
+				    border-radius:15px;
+				    /*设置上边界和左边界亮纹，使card有一种层次感*/
+				    border-top: 1px solid rgba(255,255,255,0.5);
+				    border-left: 1px solid rgba(255,255,255,0.5);
+				
+				    /*设置背景样式*/
+				    background: rgba(255,255,255,0.1);
+				    /*让透过card的底部元素模糊化,达到毛玻璃效果*/
+				    backdrop-filter: blur(5px);
+			}
+
+			#bigimg {
+				pointer-events: none;
+				position: relative;
+				width: 270px;
+			}
+
+			.details {
+				background-color: lightgray;
+				height: 30px;
+				border-radius: 10px;
+				margin: 15px auto 0 auto;
+			}
+
+			#one {
+				width: 200px;
+			}
+
+			#two {
+				width: 120px;
+			}
+
+			#three {
+				width: 170px;
+			}
+
+			#warpbtn img {
+				position: relative;
+				top: 8px;
+				left: 49px;
+				display: inline-block;
+				width: 50px;
+				margin: 10px;
+			}
+
+			.content {
+				display: inline-block;
+			}
+
+			#twapthing {
+				display: inline-block;
+				margin: 0px;
+				width: 900px;
+				position: relative;
+				top: 5px;
+				left: 20px;
+				transition: all 0.4s ease-in-out;
+			}
+			body{
+				user-select: none;
+				transition: 0.3s;
+			}
+		</style>
+	</head>
+	<body bgcolor="lightsteelblue">
+		<div id="mask">
+		</div>
+		<div id="main">
+			<div id="twapthing">
+				<div class="content">
+					<img src="1.png" id="bigimg">
+					<div id="one" class='details'></div>
+					<div id="two" class='details'></div>
+					<div id="three" class='details'></div>
+				</div>
+				<div class="content">
+					<img src="2.png" id="bigimg">
+					<div id="one" class='details'></div>
+					<div id="two" class='details'></div>
+					<div id="three" class='details'></div>
+				</div>
+				<div class="content">
+					<img src="3.png" id="bigimg">
+					<div id="one" class='details'></div>
+					<div id="two" class='details'></div>
+					<div id="three" class='details'></div>
+				</div>
+			</div>
+			<div id="warpbtn">
+				<img src="1.png" id='fristpic'><img src="2.png" id='secondpic'><img src="3.png" id='thirdpic'>
+			</div>
+		</div>
+		<script>
+			var thing = document.querySelector('#twapthing');
+			var img1 = document.querySelector('#fristpic');
+			var img2 = document.querySelector('#secondpic');
+			var img3 = document.querySelector('#thirdpic');
+			var content=document.querySelectorAll('.content')
+			img1.addEventListener('click', function() {
+				thing.style.left = 20+'px';
+				document.body.style.backgroundColor='lightsteelblue'
+			});
+			img2.addEventListener('click', function() {
+				thing.style.left = -260+'px';
+				document.body.style.backgroundColor='lightpink'
+			});
+			img3.addEventListener('click', function() {
+				thing.style.left = -537+'px';
+				document.body.style.backgroundColor='lightseagreen'
+			});
+		</script>
+	</body>
+
+</html>
